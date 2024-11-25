@@ -1,5 +1,5 @@
 
-export default `{
+export default `
     input CreateCarInput {
         companyName : String!
         carName     : String!
@@ -7,4 +7,4 @@ export default `{
         price       : String!
         model       : Int!
     }
-}`
+`

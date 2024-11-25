@@ -1,7 +1,7 @@
 
-export default `{
+export default `
     type Customer {
         userName : String!
         Email    : String!
     }
-}`
+`

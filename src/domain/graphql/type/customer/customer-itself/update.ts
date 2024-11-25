@@ -1,9 +1,12 @@
 
 
-export default `{
-    input CreateCustomer {
-        userName : String
-        Email    : String
-        password : String
+export default `
+    input UpdateCustomer {
+        userName    : String
+        newUserName : String
+        Email       : String
+        newEmail    : String
+        password    : String
+        newPassword : String
     }
-}`
+`

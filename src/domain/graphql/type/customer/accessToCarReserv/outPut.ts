@@ -1,6 +1,6 @@
 
 
-export default `{
+export default `
     type OutPutCarReserVation {
         companyName : String!
         carName     : String!
@@ -8,4 +8,4 @@ export default `{
         price       : String!
         model       : Int!
     }
-}`
+`

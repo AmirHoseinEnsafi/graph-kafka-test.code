@@ -1,6 +1,6 @@
 
 
-export default `{
+export default `
     type customerReservation {
         status  : Int!
         message : String 
@@ -12,4 +12,4 @@ export default `{
         message : String 
         value   : [OutPutCarReserVation]
     }
-}`
+`

@@ -1,10 +1,15 @@
 
-export default `{
+export default `
     input UpdateCarInput {
-        companyName : String
-        carName     : String
-        engineDetail: String
-        price       : String
-        model       : Int
+        companyName    : String
+        newCompanyName : String
+        carName        : String
+        newCarName     : String
+        engineDetail   : String
+        newEngineDetail: String
+        price          : String
+        newPrice       : String
+        model          : Int
+        newModel       : Int
     }
-}`
+`

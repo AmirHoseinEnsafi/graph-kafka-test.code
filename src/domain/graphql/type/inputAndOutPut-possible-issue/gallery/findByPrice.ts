@@ -1,9 +1,9 @@
 
 
-export default `{
-    type FindByName {
+export default `
+    type FindByPrice {
         status  : Int!
-        message : message
+        message : String
         value   : [CarLoader]
     }
-}`
+`
