@@ -1,0 +1,46 @@
+# Car Reservation System
+
+This project is a **mini implementation** of a car reservation system, showcasing the usage of modern software architecture principles such as **Domain-Driven Design (DDD)**, **CQRS**, and **Onion Architecture**, with integration of **Kafka** for messaging and **MySQL** as the database. 
+
+---
+
+## **Overview**
+
+The system is designed to handle car reservations with simple details and consists of three subdomains:
+1. **Customer**: Represents users who can make reservations.
+2. **Admin**: Handles administrative operations, such as managing reservations and cars.
+3. **Gallery/Car**: Manages car inventory and related details.
+
+The project emphasizes the separation of concerns between domains, subdomains, and infrastructure, following the principles of DDD.
+
+---
+
+## **Features**
+
+- **Domain-Driven Design (DDD)**:
+  - Core business logic encapsulated in the Domain Layer.
+  - Subdomains represent distinct areas of responsibility.
+  
+- **Command Query Responsibility Segregation (CQRS)**:
+  - Commands for modifying state (e.g., reserving a car).
+  - Queries for retrieving information (e.g., checking car availability).
+
+- **Onion Architecture**:
+  - Layers for Domain, Application, and Infrastructure with clear dependencies.
+
+- **Kafka Integration**:
+  - Messaging system for communication between services or subdomains.
+
+- **MySQL Database**:
+  - Persistent storage for entities like `Customer`, `Car`, and `Reservation`.
+
+---
+
+## **Technology Stack**
+
+- **Node.js**: Backend framework.
+- **Apollo Server**: For GraphQL API.
+- **MySQL**: Database for persistent storage.
+- **Kafka (Kafkajs)**: Messaging system.
+- **Prisma**: ORM for database operations.
+- **Docker**: For containerizing the application.
