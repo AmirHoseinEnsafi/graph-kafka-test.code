@@ -5,5 +5,6 @@ export default `
         userName : String!
         Email    : String!
         password : String!
+        isAdmin  : Boolean!
     }
 `

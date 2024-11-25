@@ -4,18 +4,17 @@ import exportIndex from "../inputAndOutPut-possible-issue/exportIndex"
 export default `   
     ${exportIndex}
     type Query {
-        findCarByname  (dto : CarloaderByName!) : FindByName!
-        findCarByPrice (dto : CarloaderByPrice!): FindByPrice!
-        userAllReservation                     : customerReservations!
+        findCarByname      (dto : CarloaderByName!)     : FindByName!
+        findCarByPrice     (dto : CarloaderByPrice!)    : FindByPrice!
+        userAllReservation (dto : receiveAllReservation): customerReservations!
     }
+        
     type Mutation {
-        createAdmin     (dto : CreateInput!):    AdminDetail!
-        updateAdmin     (dto : UpdateInput!):    AdminDetail!
+        createUser      (dto : CreateCustomer!):  Customer!
+        updateUser      (dto : UpdateCustomer!):  Customer!
         appendCar       (dto : CreateCarInput!):  CarMannagement!
         removeCar       (dto : RemoveCar!):       CarMannagement!
         updateCar       (dto : UpdateCarInput!):  CarMannagement!
-        createUser      (dto : CreateCustomer!):  CustomerDetail!
-        updateUser      (dto : UpdateCustomer!):  CustomerDetail!
         reservCar       (dto : Reservation!):     customerReservation!
         removeReservCar (dto :RemoveReservation!):customerReservation!
     }

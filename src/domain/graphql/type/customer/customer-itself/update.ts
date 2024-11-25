@@ -8,5 +8,6 @@ export default `
         newEmail    : String
         password    : String
         newPassword : String
+        toAdmin     : Boolean
     }
 `
