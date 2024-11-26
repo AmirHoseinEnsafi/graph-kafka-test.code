@@ -1,7 +1,7 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from '@apollo/server/standalone';
 import gql from 'graphql-tag';
-import typeDefs from "../graphql/type/mainType/main"
+import typeDefs from "../userInterface/type/mainType/main"
 
 const context = ({ req } : { req : Request }) => {
     return { req }
