@@ -9,7 +9,7 @@ class AdminBroker {
     private topic             : {[key : string] : string} = {}
     private appendMap         : Map<string , string>;
     private updateMap         : Map<string , string>;
-    private deleteMap         : Map<string, string>;
+    private deleteMap         : Map<string , string>;
 
     constructor( consumer : AdminConsumer ){
 
