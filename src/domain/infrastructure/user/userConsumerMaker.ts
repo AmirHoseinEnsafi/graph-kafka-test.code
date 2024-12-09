@@ -7,13 +7,18 @@ class UserConsumer {
     public updateUserConsumer !: Consumer
     public deleteUserConsumer !: Consumer
     public readUserConsumer   !: Consumer
+    private static allowCreate : boolean = false ;
 
     constructor(){
-        this.init()
+        if(!UserConsumer.allowCreate){
+            throw new Error("make the instance with UserConsumer.create")
+        }
     }
 
     public static async create(): Promise<UserConsumer> {
+        UserConsumer.allowCreate = true ;
         const instance = new UserConsumer();
+        UserConsumer.allowCreate = false ;
         await instance.init();
         return instance;
     }

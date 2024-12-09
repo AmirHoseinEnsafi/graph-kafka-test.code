@@ -70,7 +70,7 @@ class UserBroker{
 
     public update = async (userInfo : string , key : string) : Promise<string> => {
 
-        let informationToSend = {consumer : this.userConsumer.updateUserConsumer , map : this.updateUserMap , topic : this.topic.read , userInfo , key}
+        let informationToSend = {consumer : this.userConsumer.updateUserConsumer , map : this.updateUserMap , topic : this.topic.update , userInfo , key}
 
         let result = await this.sendAndRecive(informationToSend)
         
@@ -96,3 +96,5 @@ class UserBroker{
 
     }
 }
+
+export default UserBroker ;
