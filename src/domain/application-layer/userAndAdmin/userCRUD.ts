@@ -5,13 +5,12 @@ import validateUpdateUser from "./appLayerValidate";
 
 class UserApplicationlayer {
 
-        private readonly user : User ;
         private readonly userBroker : UserBroker ;
 
-        constructor (user : User , userBroker : UserBroker ) {
+        constructor (userBroker : UserBroker ) {
 
-                this.user = user ;
                 this.userBroker = userBroker ;
+
         }
 
         public createUserOrAdmin = async (dto : User) => {
@@ -45,9 +44,9 @@ class UserApplicationlayer {
                 const result = JSON.parse(jsonResult)
 
                 if(result.message){
-                        throw new Error(result.message)
+                        throw new Error(result.message);
                 }else{
-                        return result
+                        return result;
                 }
         }
 
