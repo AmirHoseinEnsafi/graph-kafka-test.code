@@ -23,7 +23,7 @@ class ValidateCar {
         }
     }
 
-    public validateMinAndMaxPrice = (dto : {minPrice : string , maxPrice : string}) : boolean => {
+    public validateMinAndMaxPrice = (dto : {minPrice : number , maxPrice : number}) : boolean => {
         if(!dto.maxPrice || !dto.minPrice){
             return false
         }else{
