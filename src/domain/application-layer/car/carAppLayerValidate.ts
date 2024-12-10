@@ -15,6 +15,22 @@ class ValidateCar {
     
     }
 
+    public validateLoadOne = (dto : {companyName : string , carName : string}) : boolean => {
+        if(!dto.carName || !dto.companyName){
+            return false ;
+        }else{
+            return true
+        }
+    }
+
+    public validateMinAndMaxPrice = (dto : {minPrice : string , maxPrice : string}) : boolean => {
+        if(!dto.maxPrice || !dto.minPrice){
+            return false
+        }else{
+            return true 
+        }
+    }
+
     public validateDelete = (car : { companyName : string , carName : string } ) : boolean => {
         if(!car.carName || !car.companyName){
             return false ;
